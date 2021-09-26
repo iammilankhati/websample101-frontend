@@ -1,0 +1,24 @@
+.our-clients {
+  position: relative;
+  padding: 2rem 1.5rem;
+
+  .client-title {
+    color: rgba($text-color, 0.75);
+    font-weight: 700;
+    position: absolute;
+    top: 2rem;
+    font-size: 1.5rem;
+  }
+  .arrows {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+
+    span {
+      padding: 0.2rem 0.4rem;
+      background: $primary-color;
+      color: rgba(#fff, 0.8);
+      margin: 2px;
+    }
+  }
+}

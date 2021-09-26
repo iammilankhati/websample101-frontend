@@ -1,0 +1,60 @@
+.services {
+  text-align: center;
+
+  padding: 1rem 1.5rem;
+
+  &__main {
+    //padding: 1rem 0;
+    &--title {
+      padding: 1rem;
+      font-weight: 700;
+      font-size: 2rem;
+      color: rgba($text-color, 0.75);
+    }
+    &--paragraph {
+      color: rgba($text-color, 0.7);
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+  &__item {
+    //padding: 2rem 0;
+    //margin: 0.5rem 0;
+    background: rgb(236, 236, 236);
+    padding: 0.5rem;
+    .icon {
+      margin: 3rem 0 2rem 0;
+      opacity: 0.8;
+    }
+
+    &:hover {
+      background: #fff;
+
+      @include set-inner-border($primary-color);
+    }
+    &--title {
+      color: rgba($text-color, 0.8);
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+    .learn-more {
+      border: none;
+      padding: 0.7rem 1.5rem;
+      background: $primary-color;
+      color: rgba(#fff, 0.8);
+      letter-spacing: -1px;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+
+      &:hover {
+        background: rgba(#fff, 0.8);
+        color: $primary-color;
+        @include set-inner-border($primary-color);
+      }
+    }
+  }
+}

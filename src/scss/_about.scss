@@ -1,0 +1,224 @@
+.about {
+  &__banner {
+    position: relative;
+    img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      position: absolute;
+      top: 40%;
+      left: 1.5rem;
+    }
+  }
+  &__info {
+    margin: 3rem 1.5rem;
+    &--title {
+      padding: 1rem 0;
+      font-weight: 700;
+      color: rgba($text-color, 0.8);
+    }
+
+    &--paragraph {
+      color: rgba($text-color, 0.7);
+    }
+  }
+
+  &__awesome {
+    &--main {
+      margin: 3rem 1.5rem;
+      h2 {
+        font-weight: 700;
+        color: rgba($text-color, 0.8);
+        padding: 0;
+      }
+      p {
+        padding: 1rem 0;
+        color: rgba($text-color, 0.7);
+      }
+    }
+
+    &--features {
+      .about__awesome--feature {
+        margin: 1rem 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+          display: flex;
+          gap: 1rem;
+          padding: 0.5rem 0;
+          .icon {
+            font-size: 2rem;
+            color: rgb(206, 206, 121);
+
+            width: 100px;
+            height: 100%;
+            .ic {
+              background: $primary-color;
+              width: 55px;
+              height: 55px;
+              padding: 0.8rem;
+            }
+          }
+          &--side {
+            h2 {
+              font-weight: 700;
+              font-size: 1.2rem;
+              color: rgba($text-color, 0.8);
+            }
+            p {
+              color: rgba($text-color, 0.7);
+            }
+          }
+        }
+      }
+
+      img {
+        padding: 3rem 1.5rem;
+      }
+    }
+  }
+  .about__we {
+    margin: 1rem 1.5rem;
+    &--why {
+      h2 {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 1rem 0;
+      }
+      p {
+        color: rgba($text-color, 0.7);
+      }
+    }
+
+    &--solution {
+      h2 {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 1rem 0;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          padding: 1rem 0;
+
+          a {
+            color: rgba($text-color, 0.7);
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          .arrow {
+            margin: 0 1rem;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    &--expertise {
+      &__item {
+        h6 {
+          font-weight: 700;
+          font-size: 0.9rem;
+          color: rgba($text-color, 0.8);
+          padding: 1rem 0;
+        }
+        .progress__bar1 {
+          width: 100%;
+          height: 5px;
+          border-radius: 5px;
+          background: rgba($text-color, 0.2);
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 45%;
+            background-color: red;
+          }
+        }
+        .progress__bar2 {
+          width: 100%;
+          height: 5px;
+          border-radius: 5px;
+          background: rgba($text-color, 0.2);
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 55%;
+            background-color: green;
+          }
+        }
+        .progress__bar3 {
+          width: 100%;
+          height: 5px;
+          border-radius: 5px;
+          background: rgba($text-color, 0.2);
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 75%;
+            background-color: rgb(25, 221, 205);
+          }
+        }
+        .progress__bar4 {
+          width: 100%;
+          height: 5px;
+          border-radius: 5px;
+          background: rgba($text-color, 0.2);
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 30%;
+            background-color: rgb(40, 67, 190);
+          }
+        }
+      }
+    }
+  }
+}
+
+.our--team {
+  margin: 4rem 1.5rem;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: rgba($text-color, 0.8);
+    position: relative;
+    left: 2vw;
+  }
+
+  &__item {
+    max-width: 320px;
+
+    h2 {
+      text-align: right;
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 1rem 1rem 0 0;
+      margin: 0;
+    }
+    p {
+      text-align: right;
+      padding: 0 2rem 0 0;
+    }
+  }
+}

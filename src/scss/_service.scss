@@ -1,0 +1,85 @@
+.service {
+  &__banner {
+    position: relative;
+    img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      position: absolute;
+      top: 40%;
+      left: 1.5rem;
+    }
+  }
+  &__info {
+    margin: 3rem 1.5rem;
+    &--title {
+      padding: 1rem 0;
+      font-weight: 700;
+      color: rgba($text-color, 0.8);
+    }
+
+    &--paragraph {
+      color: rgba($text-color, 0.6);
+    }
+  }
+  &__box {
+    margin: 3rem 1.5rem;
+
+    &--info {
+      margin: 1rem 0;
+
+      &--title {
+        font-weight: 700;
+        padding: 1rem 0;
+      }
+      &--paragraph {
+        color: rgba($text-color, 0.6);
+      }
+    }
+  }
+
+  &__titles {
+    margin: 3rem 1.5rem;
+  }
+  &__title {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem 0;
+
+    .icons {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      width: 70px;
+
+      @include set-inner-border($primary-color);
+
+      & > a {
+        color: $primary-color;
+      }
+    }
+
+    &--info {
+      &__title {
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: rgba($text-color, 0.8);
+      }
+
+      &__paragraph {
+        color: rgba($text-color, 0.6);
+      }
+    }
+  }
+}

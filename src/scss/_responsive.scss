@@ -1,0 +1,237 @@
+@include media-lgs {
+  .our--team {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+    &__item {
+      h2,
+      p {
+        text-align: center !important;
+      }
+    }
+  }
+}
+@include media-lg {
+  .main {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  nav {
+    height: min-content !important;
+    opacity: 1 !important;
+
+    .menu-nav {
+      display: flex;
+      justify-content: flex-end;
+
+      position: absolute;
+      top: 2rem;
+      right: 15vw;
+
+      &__link {
+        display: inline-block;
+        margin: 0rem 0.1rem !important;
+        padding: 0.4rem 0.7rem !important;
+
+        &:hover {
+          background: $primary-color;
+          color: #fff;
+          @include transition-ease;
+        }
+      }
+    }
+  }
+  .services {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .services__items {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  //our team
+  .our-team {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    width: 70vw;
+    margin: 0 auto;
+
+    &__info {
+      padding: 2rem 1rem;
+    }
+  }
+  //footer
+
+  .footer__upper {
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+
+  .copyrights {
+    grid-template-columns: 1fr 1fr !important;
+    align-items: end;
+  }
+  /// menu
+  .main__burger {
+    display: none;
+  }
+  //clients
+  .our-clients {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  footer {
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .about__awesome--features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    margin-right: 1.5rem;
+  }
+  .about {
+    .about__banner > p {
+      margin-left: 15vw;
+    }
+    .about__info {
+      width: 70vw;
+      position: relative;
+      left: 15vw;
+    }
+    .about__awesome {
+      width: 70vw;
+      margin: 0 auto;
+    }
+
+    .our--team {
+      width: 70vw;
+      margin: 0 auto;
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+      }
+    }
+
+    .about__we {
+      width: 70vw;
+      position: relative;
+      left: 15vw;
+      padding: 0;
+
+      margin-left: 15vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  .service {
+    .service__info {
+      width: 70vw;
+      margin: 2rem auto;
+    }
+
+    .service__box {
+      width: 70vw;
+      margin: 2rem auto;
+    }
+    .service__titles {
+      width: 70vw;
+      margin: 2rem auto;
+    }
+    .service__banner {
+      p {
+        position: absolute;
+        left: 15vw;
+      }
+    }
+    &__box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1.5rem;
+    }
+
+    &__titles {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      //grid-gap: 1.5rem;
+    }
+  }
+
+  .portfolio {
+    .portfolio__banner {
+      p {
+        position: absolute;
+        left: 15vw;
+      }
+    }
+    .portfolio__info {
+      width: 70vw;
+      margin: 2rem auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1.5rem;
+      width: 70vw;
+      margin: 0 auto;
+    }
+  }
+
+  .pricing {
+    .pricing__info {
+      width: 70vw;
+      margin: 2rem auto;
+    }
+    &__banner {
+      p {
+        margin-left: 15vw !important;
+      }
+    }
+    .pricing__plans {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr !important;
+      width: 70vw;
+      margin: 4rem auto;
+    }
+  }
+
+  .contact {
+    &__banner > p {
+      margin-left: 15vw !important;
+    }
+
+    .contact__info {
+      width: 70vw;
+      margin: 2rem auto;
+    }
+
+    form {
+      position: relative;
+      width: 70vw;
+      left: 13vw;
+    }
+  }
+}
+
+@include media-md {
+  .banner__info {
+    top: 2rem !important;
+  }
+}
+
+@include media-sm {
+  .banner__info {
+    top: 3rem !important;
+    font-size: 1rem;
+    &--title {
+      font-size: 1.175rem;
+    }
+    &--paragraph {
+      display: none;
+    }
+  }
+}

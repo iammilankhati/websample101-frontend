@@ -1,0 +1,80 @@
+.pricing {
+  &__banner {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      position: absolute;
+      top: 40%;
+      margin: 0 1.5rem;
+    }
+  }
+  &__info {
+    margin: 3rem 1.5rem;
+    &--title {
+      padding: 1rem 0;
+      font-weight: 700;
+      color: rgba($text-color, 0.8);
+    }
+
+    &--paragraph {
+      color: rgba($text-color, 0.7);
+    }
+  }
+
+  &__plans {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: 2rem 1.5rem;
+  }
+  &__plan {
+    text-align: center;
+    @include set-inner-border(rgba($text-color, 0.1));
+
+    h2,
+    h3 {
+      padding: 2rem 0;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: $primary-color;
+    }
+    h3 {
+      color: rgba($text-color, 1);
+    }
+    ul {
+      list-style-type: none;
+
+      padding: 0;
+      margin-top: 2rem;
+      li {
+        padding: 1rem 0;
+        @include set-border-bottom(rgba($text-color, 0.1));
+      }
+    }
+    button {
+      border: none;
+      padding: 0.7rem 1.5rem;
+      background: $primary-color;
+      color: #fff;
+      margin: 2rem 0;
+      &:hover {
+        color: $primary-color;
+        @include set-inner-border($primary-color);
+        background: #fff;
+        @include transition-ease;
+      }
+    }
+  }
+}
